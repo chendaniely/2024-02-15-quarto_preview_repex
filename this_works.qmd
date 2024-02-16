@@ -1,0 +1,16 @@
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+
+```{r}
+#| message: false
+g <- ggplot(mtcars, aes(x = hp, y = mpg)) + geom_point()
+ggsave("fig.png")
+```
+
+Loading figure from file:
+
+![](fig.png)
